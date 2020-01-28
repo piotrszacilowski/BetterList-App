@@ -1,0 +1,112 @@
+body {
+    background-color: #373737;
+    min-height: 70vh;
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(198, 1%, 29%);
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 130%;
+}
+
+.frame {
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+    max-width: 500px;
+    min-width: 250px;
+    background: #CCE1CA;
+    border-radius: 20px;
+    box-shadow: 4px 3px 7px 2px black;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.heading__title {
+    padding: 0.2rem 1.2rem;
+    border-radius: 10%;
+    background-color: #FCE694;
+    font-size: 1.5rem;
+}
+
+.form__label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form__input {
+    box-sizing: border-box;
+    background-color: transparent;
+    padding: 0.7rem;
+    border: solid 3px transparent;
+    border-bottom: dashed 3px#FCE694;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: #373737;
+    font-weight: bold;
+    width: 70%;
+    margin-bottom: 20px;
+    &:focus {
+        outline: none;
+        border: solid 3px #373737;
+    }
+}
+
+.form__button {
+    color: #494949 !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #CCE1CA;
+    padding: 13px 20px;
+    border: 3px solid #373737 !important;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.form__button:hover {
+    color: #373737 !important;
+    background: #FCE694;
+    border-color: #FCE694 !important;
+    transition: all 0.4s ease 0s;
+}
+
+.taskList {
+    text-align: left;
+    li {
+        position: relative;
+        padding: 0.5rem;
+    }
+    li:hover {
+        text-decoration: line-through#FCE694;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    body {
+        min-height: 100vh;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .heading__title {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .form__input {
+        width: 70%;
+    }
+}
